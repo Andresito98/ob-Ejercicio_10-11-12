@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${app.varexample}")
-    String message;
+    /*@Value("${app.varexample}")
+    String message;*/
 
     @GetMapping("/Saludo")  // --> http://localhost:8081/Saludo
     public String Saludo(){
