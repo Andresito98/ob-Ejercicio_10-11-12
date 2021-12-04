@@ -15,4 +15,9 @@ public class HelloController {
         return "Otro saludito por aqui.";
     }
 
+    @GetMapping("/OtroSaludo")  // --> http://localhost:8081/Saludo
+    public String OtroSaludo(){
+        return "Otro saludito por aqui.";
+    }
+
 }
