@@ -17,7 +17,7 @@ public class HelloController {
 
     @GetMapping("/OtroSaludo")  // --> http://localhost:8081/Saludo
     public String OtroSaludo(){
-        return "Otro saludito por aqui.";
+        return "Otro saludito por aqui2.";
     }
 
 }

@@ -31,9 +31,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         //Estos usuarios se quedan en memoria no se guardan en base de datos ni nada.
         auth.inMemoryAuthentication()
                 .passwordEncoder(new BCryptPasswordEncoder())
-                .withUser("user").password(passwordEncoder().encode("password_User")).roles("USER") //Esto es para encriptar la contraseña -_- password(passwordEncoder().encode("password"))
+                .withUser("user").password(passwordEncoder().encode("1234")).roles("USER") //Esto es para encriptar la contraseña -_- password(passwordEncoder().encode("password"))
                 .and()
-                .withUser("admin").password(passwordEncoder().encode("password_Admin")).roles("USER", "ADMIN");
+                .withUser("admin").password(passwordEncoder().encode("12345")).roles("USER", "ADMIN");
     }
 
     //Esto es para codificar/crifrar/encriptar contraseña.
